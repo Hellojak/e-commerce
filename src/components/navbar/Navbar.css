@@ -1,0 +1,137 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-menu li:hover {
+    cursor: pointer;
+}
+
+.nav-menu li hr {
+    border: none;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+}
+
+.nav-login-cart button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-login-cart button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-login-cart img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.nav-cart-count {
+    background-color: #ff4c4c;
+    color: #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-menu {
+        margin-top: 10px;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+        position: relative;
+    }
+
+    .nav-menu li hr {
+        width: 100%;
+    }
+
+    .nav-login-cart button {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-logo p {
+        font-size: 18px;
+    }
+
+    .nav-menu li a {
+        font-size: 14px;
+    }
+
+    .nav-login-cart button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
